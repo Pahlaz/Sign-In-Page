@@ -46,7 +46,7 @@
 	    });
 	    FB.AppEvents.logPageView();
 
-	    FB.getLoginStatus(function(){
+	    FB.getLoginStatus(function(response){
 	    	if(response.status === 'connected'){
 	    		document.getElementById('fb-status').innerHTML = 'You are connected.'
 	    	}else{
