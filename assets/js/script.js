@@ -9,6 +9,7 @@ window.fbAsyncInit = function() {
 
 
 $(function(){
+  
   // sign in animation
   $('.signin form .input-group input').focusout(function(){
     var text_val = $(this).val();
@@ -20,7 +21,8 @@ $(function(){
     }
   });
   
-  // google sign in
+  
+  // Google Sign In
   gapi.load('auth2', function(){
   	gapi.auth2.init();
   });
@@ -28,7 +30,7 @@ $(function(){
 });
 
 
-// facebook login
+// Facebook Sign In
 (function(d, s, id){
  	var js, fjs = d.getElementsByTagName(s)[0];
 	if (d.getElementById(id)) {return;}

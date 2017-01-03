@@ -14,14 +14,14 @@ header{
 	transition: all .3s;
 }
 
-.signin, .signup{
+.signin{
 	padding-top: 40px;
 }
-.signin form, .signup form{
+.signin form{
 	margin: 20px auto;
 	display: table;
 }
-.signin form p, .signup form p{
+.signin form p{
   text-align: center;
 }
 
@@ -71,13 +71,16 @@ input[type="submit"]:active {
   color: white;
   background: #2f5a78;
 }
-
 input[type="submit"]{
   margin-bottom: 10px;
 }
 
 .connect-container{
   position: relative;
+}
+
+.google-signin, .fb-signin{
+  display: inline-block;
 }
 
 
