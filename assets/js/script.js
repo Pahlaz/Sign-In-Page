@@ -20,8 +20,15 @@ $(function(){
     }
   });
   
+  // google sign in
+  gapi.load('auth2', function(){
+  	gapi.auth2.init();
+  });
+
 });
 
+
+// facebook login
 (function(d, s, id){
  	var js, fjs = d.getElementsByTagName(s)[0];
 	if (d.getElementById(id)) {return;}
