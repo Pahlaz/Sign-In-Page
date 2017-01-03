@@ -1,0 +1,99 @@
+/* Header Styles */
+header{
+  background: #2f5a78;
+}
+
+.profile-pic{
+	padding-top: 40px;
+	height: 250px;
+}
+.profile-pic img{
+	width: 250px;
+	position: relative;
+	left: calc(50% - 125px);
+	transition: all .3s;
+}
+
+.signin, .signup{
+	padding-top: 40px;
+}
+.signin form, .signup form{
+	margin: 20px auto;
+	display: table;
+}
+.signin form p, .signup form p{
+  text-align: center;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 40px;
+}
+.input-group input {
+  padding: 10px 0;
+}
+.input-group label{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-30%);
+  transform: translateY(-30%);
+  font-style: italic;
+  font-size: 18px;
+  color: #7E827B;
+  pointer-events: none;
+  -webkit-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+}
+.input-group input:focus + label,
+.input-group input.has-value + label {
+  top: -10px;
+  font-size: 12px;
+  color: #7E827B;
+}
+input {
+	width: 300px;
+  background: none;
+  border: solid 2px #2f5a78;
+  color: #2f5a78;
+  padding: 15px 40px;
+  font-size: 24px;
+  display: inline-block;
+}
+input:focus, input:active {
+  outline: none;
+}
+input[type="text"], input[type="email"], input[type="password"] {
+  border: none;
+  border-bottom: solid 2px #2f5a78;
+}
+input[type="submit"]:active {
+  color: white;
+  background: #2f5a78;
+}
+
+input[type="submit"]{
+  margin-bottom: 10px;
+}
+
+.connect-container{
+  position: relative;
+}
+
+
+@media screen and (max-width: 500px){
+	.profile-pic{
+		height: 200px;
+	}
+	.profile-pic img{
+		width: 200px;
+		left: calc(50% - 100px);
+	}	
+
+	input {
+		width: 200px;
+  	font-size: 18px;
+	}
+}
+
+
